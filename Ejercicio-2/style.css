@@ -1,0 +1,80 @@
+/*el asterisco es el selctor universal, selecciona todos los elementos de la pagina*/
+*{
+    /* elimino margenes */
+    margin: 0;
+    /* elimino el relleno */
+    padding: 0;
+    /*evito que el ancho se sume al relleno*/
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+/* selector a partir del nombre*/
+body{
+    /*fondo*/
+    background: url(assets/imagen-back.jpg) center 0 no-repeat;
+    background-size: cover;
+}
+
+main{
+    /*configuro el ancho*/
+    width: 100%;
+    max-width: 700px;
+    /*centrar el contenido*/
+    margin: 0 auto 0 auto;
+    background-color: rgba(225, 168, 243, 0.8);
+    padding: 0 10px;
+    
+}
+
+img{
+    /*configurar el ancho al 100%*/
+    width: 100%;
+}
+
+h1{
+    /*familia tipopgrafica*/
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    /*color fuente*/
+    color: rgb(74, 21, 103);
+    /*alinear texto*/
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+p{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(24, 2, 36);
+    text-align: justify;
+    /*margen top, right, bottom, left*/
+    margin: 20px 20px 20px 20px;
+}
+
+/*selecciona etiqueta*/
+.subtitulo{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: rgb(139, 71, 163);
+    margin: 20px 20px 20px 20px;
+}
+
+/*selecciona id*/
+#parrafo-destacado{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(216, 14, 112);
+}
+
+
+
+
