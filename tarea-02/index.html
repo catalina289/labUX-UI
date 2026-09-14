@@ -29,20 +29,19 @@
 
             <!-- Navegador principal -->
             <nav role="navigation" aria-label="Menu principal">
-                  <a href="" class="bt-principal">Qué hacer</a>
-                  <a href="" class="bt-principal">Antes de llegar</a>
-                  <a href="" class="bt-principal">Información</a>
-                  <a href="" class="bt-principal">Contacto</a>
+                  <a href="#destacadas" class="bt-principal" aria-label="Ir a la sección Qué hacer en Vancouver">Qué hacer</a>
+                  <a href="#Experiencia" class="bt-principal" aria-label="Ir a la sección Antes de llegar">Experiencia</a>
+                  <a href="#destacadas-semana" class="bt-principal" aria-label="Ir a la sección Información">Destacados</a>
+                  <a href="#contacto" class="bt-principal" aria-label="Ir al pie de página y datos de Contacto">Contacto</a>
             </nav>
 
         </header>
 
-        </header>
 
         <!-- Banner Principal (Hero) -->
         <section class="hero-banner">
             <video autoplay loop muted playsinline>
-            <source src="assets/Vancouver.mp4" type="video/mp4">
+            <source src="assets/video_vancouver.mp4" type="video/mp4">
             Tu navegador no soporta videos en HTML5.
             </video>
             <div class="hero-texto">
@@ -118,7 +117,7 @@
                             12 – 13 de septiembre<br>
                             English Bay
                         </p>
-                        <a href="" class="bt-vermas aria-label="Ver más sobre Vancouver Sunset Music Festival ">Ver Más</a>
+                        <a href="" class="bt-vermas" aria-label="Ver más sobre Vancouver Sunset Music Festival">Ver Más</a>
                     </article>
 
                     <!-- Tarjeta Destacada 2 -->
@@ -130,7 +129,7 @@
                             Granville Island
                         </p>
                          </p>
-                        <a href="" class="bt-vermas aria-label="Ver más sobre los espacios verdes imperdibles">Ver Más</a>
+                        <a href="" class="bt-vermas" aria-label="Ver más sobre los espacios verdes imperdibles">Ver Más</a>
                     </article>
 
                     <!-- Tarjeta Destacada 3 -->
@@ -167,33 +166,33 @@
         </main>
 
         <!-- Pie de Página Institucional -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="contacto">
         <div class="footer-brand">
             <img src="assets/logo__van.png" alt="Logotipo oficial de la ciudad Vancouver" width="150" height="70">
         </div>
             <div class="footer-links">
-        <nav>
+        <nav aria-labelledby="footer-prestadores">
             <h3 id="footer-prestadores">Prestadores</h3>
             <ul>
-                <li><a href="/alquileres-temporales">Alquileres Temporales</a></li>
-                <li><a href="/alojamientos-turisticos">Alojamientos turísticos</a></li>
+                <li><a href="/alquileres-temporales" aria-label="Consultar la guía de alquileres temporales en la ciudad">Alquileres Temporales</a></li>
+                <li><a href="/alojamientos-turisticos" aria-label="Ver el catálogo de alojamientos turísticos registrados">Alojamientos turísticos</a></li>
             </ul>
         </nav>
 
-        <nav>
+        <nav aria-labelledby="footer-profesionales">
             <h3 id="footer-profesionales">Profesionales</h3>
             <ul>
-                <li><a href="/observatorio-turistico">Observatorio turístico</a></li>
-                <li><a href="/turismo-reuniones">Turismo de Reuniones</a></li>
-                <li><a href="/prensa-contacto">Prensa: material y contacto</a></li>
-                <li><a href="/noticias-ente">Noticias del ente de turismo</a></li>
+                <li><a href="/observatorio-turistico" aria-label="Acceder a los informes y datos del Observatorio Turístico">Observatorio turístico</a></li>
+                <li><a href="/turismo-reuniones" aria-label="Información y servicios para el Turismo de Reuniones y eventos">Turismo de Reuniones</a></li>
+                <li><a href="/prensa-contacto" aria-label="Descargar material de prensa y vías de contacto para medios">Prensa: material y contacto</a></li>
+                <li><a href="/noticias-ente" aria-label="Leer las últimas noticias publicadas por el Ente de Turismo">Noticias del ente de turismo</a></li>
             </ul>
         </nav>
 
-        <nav>
+        <nav aria-labelledby="footer-contacto">
             <h3 id="footer-contacto">Contacto e Interacción</h3>
             <ul>
-                <li><a href="/contactate-con-nosotros">Contactate con nosotros</a></li>
+                <li><a href="/contactate-con-nosotros" aria-label="Abrir el formulario de contacto con la oficina de turismo">Contactate con nosotros</a></li>
                 <li><a href="/suscribete-newsletter" aria-label="Ir al formulario para suscribirse al Newsletter oficial">Suscríbete al Newsletter</a></li>
             </ul>
         </nav>
