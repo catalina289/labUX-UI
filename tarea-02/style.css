@@ -1,0 +1,403 @@
+/*
+0. estilos generales
+1. tipografias
+2. cabecera
+3. Banner principal
+4. seccion destacada (trajetas)
+5. experiencia video
+6. Mapa
+7. Footer
+8. Media
+
+
+*/
+
+/* 0. selectores generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #4E148C;
+    --color-acento: #72CBD7;
+    --color-acento2: #E9D985;
+    --color-acento3: #645BC9;
+    --color-parrafo: #0C1321;
+
+}
+
+.hide-element{
+    display: none;
+}
+
+.flex-elements{
+    display: flex;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+}
+  
+
+img{
+    width: 100%;
+    padding: 10px;
+}
+
+
+/*1. tipografias*/
+
+h1 {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--color-principal)
+}
+
+h2 {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h3 {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--color-principal);
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--color-parrafo);
+}
+
+/*2. cabecera*/
+
+#cabecera-web {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bt-principal {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background: var(--color-principal);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s all linear;
+
+}
+
+.bt-principal:hover{
+    background: var(--color-acento2);
+    padding: 8px 20px;
+}
+
+/* 3. BANNER PRINCIPAL */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Capa oscura */
+    z-index: 2;
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    z-index: 10;
+}
+
+.hero-texto h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    color: #ffffff; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+/* 4. destacadas (tarjetas)*/
+
+#destacadas, 
+#destacadas-semana {
+    margin: 100px 20px;
+}
+
+#destacadas .artculo-index p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+#destacadas-semana .artculo-index p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.artculo-index{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 10px 15px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(116, 74, 149, 0.397);
+    border-radius: 20px;
+    gap: 20px;
+    transition: transform 0.5s ease, box-shadow 0.6s ease;
+}
+
+.artculo-index:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(116, 74, 149, 0.397);
+    cursor: pointer;
+}
+
+.artculo-index img {
+   width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.artculo-index h3 {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.2;
+    min-height: 72px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bt-vermas {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background: var(--color-principal);
+    padding: 6px 10px;
+    border-radius: 20px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+    transition: 0.3s all linear;
+    
+}
+
+.bt-vermas:hover{
+    background: var(--color-acento2);
+}
+
+
+/* 5. Video Experinecias*/
+
+#Experiencia {
+    margin: 0 40px;
+}
+
+#Experiencia div {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(46, 5, 61, 0.15);
+}
+
+#Experiencia video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* 6. SECCIÓN DEL MAPA */
+
+section[aria-labelledby="titulo-mapa"] {
+    max-width: 1100px;
+    width: 90%;
+    margin: 60px auto 90px auto;
+}
+
+.map-container {
+    width: 100%; 
+    overflow: hidden;  
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(46, 5, 61, 0.15);  
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/*7. footer*/
+
+footer {
+    background-color: var(--color-principal);
+    padding: 70px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 30px;
+    margin-top: 80px;
+    
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+
+footer h3 {
+    color: var(--color-acento2);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+.footer-brand img {
+    width: 180px;
+    height: auto;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+
+/* 8. MEDIA*/
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 350px;
+    }
+    
+    .hero-texto h2 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 40px 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #cabecera-web {
+        flex-direction: column;
+    }
+
+    #cabecera-web > nav {
+        width: 100%;
+    }
+
+    .bt-principal {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        border-bottom: 1px solid var(--color-acento2);
+    }
+
+    .flex-elements {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 300px;
+        border-radius: 12px;
+    }
+}
